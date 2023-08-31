@@ -1,16 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
-import Error from 'components/organisms/Error'
-import poppins from 'globalStyles/fontFamily'
-import { ErrorProps } from './types'
-
-const GlobalError = ({ error, reset }: ErrorProps) => {
-  useEffect(() => {
-    // eslint-disable-next-line no-console
-    console.error(error)
-  }, [error])
-
+const GlobalError = () => {
   return (
     <html lang="pt-BR">
       <head>
@@ -27,10 +17,6 @@ const GlobalError = ({ error, reset }: ErrorProps) => {
         <link href="/favicon.png" rel="apple-touch-icon" />
         <title>Error Page</title>
       </head>
-
-      <body className={poppins.className}>
-        <Error reset={reset} />
-      </body>
     </html>
   )
 }

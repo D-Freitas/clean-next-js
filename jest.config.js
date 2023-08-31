@@ -1,25 +1,5 @@
 module.exports = {
   collectCoverageFrom: ['src/**/*.{ts,tsx}'],
-  coveragePathIgnorePatterns: [
-    'src/app/page.tsx',
-    'src/app/layout.tsx',
-    'src/app/global-error.tsx',
-    'src/app/components/index.tsx',
-    'src/app/components/atoms/index.tsx',
-    'src/app/components/molecules/index.tsx',
-    'src/app/components/organisms/index.tsx',
-    'src/app/components/templates/index.tsx',
-    'src/app/not-found.tsx',
-    'src/theme/',
-    'src/globalStyles/',
-    'src/providers/',
-    'src/assets/',
-    'src/tests/providers/',
-    'src/@types/',
-    'src/testHelpers/',
-    'types.ts',
-    'styles.module.scss'
-  ],
   fakeTimers: {
     enableGlobally: true
   },
